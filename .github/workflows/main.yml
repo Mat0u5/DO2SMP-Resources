@@ -64,7 +64,7 @@ jobs:
          port: ${{ secrets.FTP_PORT }}
          password: ${{ secrets.FTP_PASSWORD }}
          local_path: './serverresourcepackreload.properties'
-         remote_path: 'config/'
+         remote_path: 'default/config/'
          sftp_only: true
     
    # - name: Copy server.properties
@@ -97,7 +97,7 @@ jobs:
          port: ${{ secrets.FTP_PORT }}
          password: ${{ secrets.FTP_PASSWORD }}
          local_path: './server.properties'
-         remote_path: './'
+         remote_path: 'default/'
          sftp_only: true
     
     - name: Create Release
