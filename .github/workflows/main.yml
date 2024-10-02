@@ -57,15 +57,15 @@ jobs:
           resourcepack.url=https\://github.com/${{ github.repository }}/releases/download/release-${{ github.sha }}/${{ env.ZIP_NAME }}
           resourcepack.sha1=${{env.CHECKSUM}}
     - name: Upload serverresourcepackreload.properties to FileZilla
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+      uses: tomasbkk/action-ftp-upload@v1.0
       with:
-         username: ${{ secrets.FTP_USER }}
-         server: ${{ secrets.FTP_HOST }}
-         port: ${{ secrets.FTP_PORT }}
-         password: ${{ secrets.FTP_PASSWORD }}
-         local_path: './serverresourcepackreload.properties'
-         remote_path: 'default/config/'
-         sftp_only: false
+        user: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        host: ${{ secrets.FTP_HOST }}
+        port: ${{ secrets.FTP_PORT }}
+        src: serverresourcepackreload.properties
+        dest: default/config/serverresourcepackreload.properties
+        verbose: true
     
    # - name: Copy server.properties
    #   uses: canastro/copy-file-action@master
@@ -88,17 +88,17 @@ jobs:
         find: "\nresource-pack-sha1="
         replace: "\nresource-pack-sha1=${{env.CHECKSUM}}"
         regex: false
-        
-    - name: Upload serverresourcepackreload.properties to FileZilla
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+         
+    - name: Upload server.properties to FileZilla
+      uses: tomasbkk/action-ftp-upload@v1.0
       with:
-         username: ${{ secrets.FTP_USER }}
-         server: ${{ secrets.FTP_HOST }}
-         port: ${{ secrets.FTP_PORT }}
-         password: ${{ secrets.FTP_PASSWORD }}
-         local_path: './server.properties'
-         remote_path: 'default/'
-         sftp_only: false
+        user: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        host: ${{ secrets.FTP_HOST }}
+        port: ${{ secrets.FTP_PORT }}
+        src: server.properties
+        dest: default/server.properties
+        verbose: true
     
     - name: Create Release
       id: create_release
