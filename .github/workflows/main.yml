@@ -57,16 +57,16 @@ jobs:
         content: |
           resourcepack.url=https\://github.com/${{ github.repository }}/releases/download/release-${{ github.sha }}/${{ env.ZIP_NAME }}
           resourcepack.sha1=${{env.CHECKSUM}}
-    #- name: Upload serverresourcepackreload.properties to FileZilla
-    #  uses: tomasbkk/action-ftp-upload@v1.0
-    #  with:
-    #    user: ${{ secrets.FTP_USER }}
-    #    password: ${{ secrets.FTP_PASSWORD }}
-    #    host: ${{ secrets.FTP_HOST }}
-    #    port: ${{ secrets.FTP_PORT }}
-    #    src: serverresourcepackreload.properties
-    #    dest: default/config/serverresourcepackreload.properties
-    #    verbose: true
+    - name: Upload serverresourcepackreload.properties to FileZilla
+      uses: tomasbkk/action-ftp-upload@v1.0
+      with:
+        user: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        host: ${{ secrets.FTP_HOST }}
+        port: ${{ secrets.FTP_PORT }}
+        src: serverresourcepackreload.properties
+        dest: default/config/serverresourcepackreload.properties
+        verbose: true
     
    # - name: Copy server.properties
    #   uses: canastro/copy-file-action@master
@@ -90,16 +90,16 @@ jobs:
         replace: "\nresource-pack-sha1=${{env.CHECKSUM}}"
         regex: false
          
-    #- name: Upload server.properties to FileZilla
-    #  uses: tomasbkk/action-ftp-upload@v1.0
-    #  with:
-    #    user: ${{ secrets.FTP_USER }}
-    #    password: ${{ secrets.FTP_PASSWORD }}
-    #    host: ${{ secrets.FTP_HOST }}
-    #    port: ${{ secrets.FTP_PORT }}
-    #    src: server.properties
-    #    dest: default/server.properties
-    #    verbose: true
+    - name: Upload server.properties to FileZilla
+      uses: tomasbkk/action-ftp-upload@v1.0
+      with:
+        user: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        host: ${{ secrets.FTP_HOST }}
+        port: ${{ secrets.FTP_PORT }}
+        src: server.properties
+        dest: default/server.properties
+        verbose: true
     
     - name: Create Release
       id: create_release
@@ -137,9 +137,9 @@ jobs:
         method: POST
         payload: '{ "embeds": [{ "title": "New Resource Pack Release", "author": {"name": "${{ github.event.head_commit.author.name}}","url": "https://github.com/${{ github.event.head_commit.author.username}}","icon_url": "https://github.com/${{ github.event.head_commit.author.username}}.png"},"description": "```Commit Message:\n\n${{ env.COMMIT_MESSAGE }}```\nGithub changelog: [here](https://github.com/${{ github.repository }}/commit/${{ github.sha }})\nPermanent link to latest resource pack: [here](https://github.com/${{ github.repository }}/releases/latest/download/${{ env.ZIP_NAME }})\nLink to this resource pack: [here](https://github.com/${{ github.repository }}/releases/download/release-${{ github.sha }}/${{ env.ZIP_NAME }})\nRelease ID: release-${{ github.sha }}\nSHA1: ${{env.CHECKSUM}}\n\nResource Pack Size (**compressed**): ${{ env.FILE_SIZE_COMPRESSED }}\nResource Pack Size (**uncompressed**): ${{ env.FILE_SIZE_UNCOMPRESSED }}\n> .ogg files: ${{ env.FILE_SIZE_OGG }}\n> .json files: ${{ env.FILE_SIZE_JSON }}\n> .png files: ${{ env.FILE_SIZE_PNG }}", "url": "https://github.com/${{ github.repository }}/releases/tag/release-${{ github.sha }}", "color": 3384627 }] }'
         
-    - name: Discord Message #2 (sent to minecraft)
-      uses: satak/webrequest-action@master
-      with:
-        url: ${{ secrets.DISCORD_WEBHOOK_CONSOLE }}
-        method: POST
-        payload: '{"content":"resourcepack setLatestResourcepack \"https://github.com/${{ github.repository }}/releases/download/release-${{ github.sha }}/${{ env.ZIP_NAME }}\" ${{env.CHECKSUM}}"}'
+    #- name: Discord Message #2 (sent to minecraft)
+    #  uses: satak/webrequest-action@master
+    #  with:
+    #    url: ${{ secrets.DISCORD_WEBHOOK_CONSOLE }}
+    #    method: POST
+    #    payload: '{"content":"resourcepack setLatestResourcepack \"https://github.com/${{ github.repository }}/releases/download/release-${{ github.sha }}/${{ env.ZIP_NAME }}\" ${{env.CHECKSUM}}"}'
