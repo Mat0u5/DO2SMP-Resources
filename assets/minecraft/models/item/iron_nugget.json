@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/iron_nugget"
+  },
+  "overrides": [
+	{ "predicate": {"custom_model_data": 1}, "model": "custom:item/chips/chip_1"},
+	{ "predicate": {"custom_model_data": 2}, "model": "custom:item/chips/chip_5"},
+	{ "predicate": {"custom_model_data": 3}, "model": "custom:item/chips/chip_10"},
+	{ "predicate": {"custom_model_data": 4}, "model": "custom:item/chips/chip_25"},
+	{ "predicate": {"custom_model_data": 5}, "model": "custom:item/chips/chip_100"},
+	{ "predicate": {"custom_model_data": 6}, "model": "custom:item/chips/chip_500"},
+	{ "predicate": {"custom_model_data": 7}, "model": "custom:item/chips/chip_1000"},
+	{ "predicate": {"custom_model_data": 8}, "model": "custom:item/chips/chip_5000"},
+	{ "predicate": {"custom_model_data": 9}, "model": "custom:item/chips/chip_25000"},
+	{ "predicate": {"custom_model_data": 10}, "model": "custom:item/chips/chip_100000"}
+  ]
+}
