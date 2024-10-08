@@ -3,6 +3,8 @@
   "overrides": [
 	{ "predicate": {"custom_model_data": 1}, "model": "custom:item/bill_hat"},
 	{ "predicate": {"custom_model_data": 2}, "model": "custom:item/sus_guy"},
-	{ "predicate": {"custom_model_data": 3}, "model": "custom:item/painting"}
+	{ "predicate": {"custom_model_data": 3}, "model": "custom:item/paintings/painting_ziz"},
+	{ "predicate": {"custom_model_data": 4}, "model": "custom:item/paintings/painting_shadowz"},
+	{ "predicate": {"custom_model_data": 5}, "model": "custom:item/paintings/painting_kyuu"}
   ]
 }
