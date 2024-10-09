@@ -1,0 +1,22 @@
+{
+	"providers": [
+		{
+			"type": "bitmap",
+			"file": "custom:font/icons8.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uE0A1\uE0A2\uE0A3\uE0A4"
+			]
+		},
+		{
+			"type": "bitmap",
+			"file": "custom:font/icons32.png",
+			"ascent": 8,
+			"height": 9,
+			"chars": [
+				"\uE0A5"
+			]
+		}
+	]
+}
