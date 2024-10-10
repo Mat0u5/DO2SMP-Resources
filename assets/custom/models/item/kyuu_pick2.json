@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"custom:item/kyuu_pick2"}}
+{"parent":"minecraft:item/handheld","textures":{"layer0":"custom:item/kyuu_pick2"}}
