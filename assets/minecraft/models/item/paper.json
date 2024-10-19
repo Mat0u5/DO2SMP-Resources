@@ -4,6 +4,8 @@
     "layer0": "minecraft:item/paper"
   },
   "overrides": [
-	{ "predicate": {"custom_model_data": 1}, "model": "custom:item/zizola"}
+	{ "predicate": {"custom_model_data": 1}, "model": "custom:item/paper/zizola"},
+	{ "predicate": {"custom_model_data": 2}, "model": "custom:item/paper/eric"},
+	{ "predicate": {"custom_model_data": 3}, "model": "custom:item/paper/fuinobi"}
   ]
 }
