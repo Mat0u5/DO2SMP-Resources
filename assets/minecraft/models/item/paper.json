@@ -6,6 +6,12 @@
   "overrides": [
 	{ "predicate": {"custom_model_data": 1}, "model": "custom:item/paper/zizola"},
 	{ "predicate": {"custom_model_data": 2}, "model": "custom:item/paper/eric"},
-	{ "predicate": {"custom_model_data": 3}, "model": "custom:item/paper/fuinobi"}
+	{ "predicate": {"custom_model_data": 3}, "model": "custom:item/paper/fuinobi"},
+	{ "predicate": {"custom_model_data": 4}, "model": "custom:item/paper/kyuu"},
+	{ "predicate": {"custom_model_data": 5}, "model": "custom:item/paper/nicky"},
+	{ "predicate": {"custom_model_data": 6}, "model": "custom:item/paper/stuff"},
+	{ "predicate": {"custom_model_data": 7}, "model": "custom:item/paper/mat0u5"},
+	{ "predicate": {"custom_model_data": 8}, "model": "custom:item/paper/ralmenkuro"},
+	{ "predicate": {"custom_model_data": 9}, "model": "custom:item/paper/niftyname641"}
   ]
 }
