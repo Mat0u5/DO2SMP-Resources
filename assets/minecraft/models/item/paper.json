@@ -12,6 +12,9 @@
 	{ "predicate": {"custom_model_data": 6}, "model": "custom:item/paper/stuff"},
 	{ "predicate": {"custom_model_data": 7}, "model": "custom:item/paper/mat0u5"},
 	{ "predicate": {"custom_model_data": 8}, "model": "custom:item/paper/ralmenkuro"},
-	{ "predicate": {"custom_model_data": 9}, "model": "custom:item/paper/niftyname641"}
+	{ "predicate": {"custom_model_data": 9}, "model": "custom:item/paper/niftyname641"},
+	{ "predicate": {"custom_model_data": 10}, "model": "custom:item/paper/ontimoose"},
+	{ "predicate": {"custom_model_data": 11}, "model": "custom:item/paper/royal"},
+	{ "predicate": {"custom_model_data": 12}, "model": "custom:item/paper/mopag"}
   ]
 }
