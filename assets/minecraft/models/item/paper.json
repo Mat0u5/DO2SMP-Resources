@@ -15,6 +15,7 @@
 	{ "predicate": {"custom_model_data": 9}, "model": "custom:item/paper/niftyname641"},
 	{ "predicate": {"custom_model_data": 10}, "model": "custom:item/paper/ontimoose"},
 	{ "predicate": {"custom_model_data": 11}, "model": "custom:item/paper/royal"},
-	{ "predicate": {"custom_model_data": 12}, "model": "custom:item/paper/mopag"}
+	{ "predicate": {"custom_model_data": 12}, "model": "custom:item/paper/mopag"},
+	{ "predicate": {"custom_model_data": 13}, "model": "custom:item/paper/smol"}
   ]
 }

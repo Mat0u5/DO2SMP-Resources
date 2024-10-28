@@ -13,6 +13,15 @@
 	{ "predicate": {"custom_model_data": 7}, "model": "custom:item/chips/chip_1000"},
 	{ "predicate": {"custom_model_data": 8}, "model": "custom:item/chips/chip_5000"},
 	{ "predicate": {"custom_model_data": 9}, "model": "custom:item/chips/chip_25000"},
-	{ "predicate": {"custom_model_data": 10}, "model": "custom:item/chips/chip_100000"}
+	{ "predicate": {"custom_model_data": 10}, "model": "custom:item/chips/chip_100000"},
+	
+	{ "predicate": {"custom_model_data": 11}, "model": "custom:item/buckshot/adrenaline"},
+	{ "predicate": {"custom_model_data": 12}, "model": "custom:item/buckshot/beer"},
+	{ "predicate": {"custom_model_data": 13}, "model": "custom:item/buckshot/cigarettes"},
+	{ "predicate": {"custom_model_data": 14}, "model": "custom:item/buckshot/expired_medicine"},
+	{ "predicate": {"custom_model_data": 15}, "model": "custom:item/buckshot/handcuffs"},
+	{ "predicate": {"custom_model_data": 16}, "model": "custom:item/buckshot/handsaw"},
+	{ "predicate": {"custom_model_data": 17}, "model": "custom:item/buckshot/inverter"},
+	{ "predicate": {"custom_model_data": 18}, "model": "custom:item/buckshot/magnyfying_glass"}
   ]
 }
