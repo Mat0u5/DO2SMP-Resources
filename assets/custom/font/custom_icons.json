@@ -62,6 +62,15 @@
 			"chars": [
 				"\uE0C1"
 			]
+		},
+		{
+			"type": "bitmap",
+			"file": "custom:font/poker_suits.png",
+			"ascent": 8,
+			"height": 8,
+			"chars": [
+				"\uE0C2\uE0C3\uE0C4\uE0C5"
+			]
 		}
 	]
 }
