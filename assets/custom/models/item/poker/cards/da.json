@@ -1,0 +1,6 @@
+{
+    "parent": "custom:item/poker/card",
+    "textures": {
+        "1": "custom:item/poker/cards/da"
+    }
+}
