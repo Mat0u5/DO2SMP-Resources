@@ -3,7 +3,7 @@
 	"parent": "carved_pumpkin",
 	"texture_size": [52, 69],
 	"textures": {
-		"10": "custom:item/bird"
+		"10": "custom:item/birds/bird"
 	},
 	"elements": [
 		{
